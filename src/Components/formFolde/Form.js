@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const Form = () => {
     const [userInput, setUserInput] = useState({
         name: "",
@@ -11,7 +10,8 @@ const Form = () => {
     const [showPassword, setShowPassword] = useState(false)
     const [disableButton, setDisableButton] = useState(true)
     const [erroMessage, setErrorMessage] = useState({
-        email: ""
+        email: "",
+        password: ''
     })
     const handleChange = (e) => {
         setUserInput({
@@ -26,6 +26,10 @@ const Form = () => {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
                 errorMessage = emailRegex.test(value) ? "" : "Invalid Email format"
                 break;
+            case 'password':
+                const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+                errorMessage = passwordRegex.test(value) ? "" : "Password is not in proper format"
+                break
             default:
                 break
         }
@@ -35,12 +39,24 @@ const Form = () => {
         })
     }
 
+    const resetForm = () => {
+        setUserInput({
+            name: "",
+            userName: "",
+            age: "",
+            email: "",
+            password: ""
+        })
+    }
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log("Submit", userInput);
+        let response = false
+        if (response) {
+            resetForm()
+        } else { alert("There is some issue") }
     }
     useEffect(() => {
-        const isEmailValid = erroMessage.email === ''
+        const isEmailValid = erroMessage.email === '' && erroMessage.password === ''
         const isAnyFieldEmpty = Object.values(userInput).some(item => item === '')
         setDisableButton(!isEmailValid || isAnyFieldEmpty);
     }, [userInput, erroMessage])
@@ -65,6 +81,7 @@ const Form = () => {
                 <br />
                 <label >Password</label>
                 <input onChange={handleChange} type={showPassword ? "text" : "password"} name='password' value={userInput.password} />
+                <span style={{ color: 'red' }}>{erroMessage.password}</span>
                 <span style={{ cursor: "pointer" }} onClick={() => setShowPassword(!showPassword)}>👀 </span>
                 <input type="submit" disabled={disableButton} />
             </form>
