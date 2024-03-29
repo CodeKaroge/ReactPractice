@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function ExcelProperty() {
-    const [data, setData] = useState([
-        ['A1', 'B1', 'C1'],
-        ['A2', 'B2', 'C2'],
-        ['A3', 'B3', 'C3'],
-        ['A3', 'B3', 'C3'],
-        ['A3', 'B3', 'C3'],
-    ])
+    const [data, setData] = useState([])
+    const [row, setRow] = useState(3)
+    const [col, setCol] = useState(3)
     const [selectedCell, setSelectedCell] = useState(null)
     const [selectedCellForInput, setSelectedCellForInput] = useState(null)
 
@@ -21,11 +17,19 @@ function ExcelProperty() {
         setSelectedCellForInput({ row, column })
     }
     const handleSingleClick = (row, column) => {
+        if (!!selectedCellForInput && (selectedCellForInput.row !== row || selectedCellForInput.column !== column)) {
+            setSelectedCellForInput(null)
+        }
         setSelectedCell({ row, column })
     }
+    useEffect(() => {
+        setData(Array.from({ length: row }, () => Array(col).fill("")))
+    }, [row, col])
 
     return (
         <div>
+            <button onClick={() => setRow(row + 1)}>Add row</button>
+            <button onClick={() => setCol(col + 1)}>Add Column</button>
             <table>
                 <tbody>
                     {data.map((item, rowIndex) => (
@@ -56,5 +60,4 @@ function ExcelProperty() {
         </div>
     )
 }
-
 export default ExcelProperty
