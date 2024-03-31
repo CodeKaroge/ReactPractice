@@ -14,7 +14,7 @@ const Countdown = () => {
         }
         if (timeLeft < 5 && timeLeft > 0) {
             setMessage("Your last 5 seconds left")
-        } else if (timeLeft === 0) {
+        } else if (timeLeft === 0 || timeLeft > 5) {
             setMessage('')
         }
         return () => clearInterval(timer)
