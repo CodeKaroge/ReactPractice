@@ -4,8 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/mouse-events/node_modules
-/debouncing/node_modules
+
 # testing
 /coverage
 
