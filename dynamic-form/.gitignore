@@ -4,11 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/mouse-events/node_modules
-/debouncing/node_modules
-/Modal/node_modules
-/dynamic-form/node_modules
-/paginationyourcomponent/node_modules
+
 # testing
 /coverage
 
