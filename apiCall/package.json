@@ -1,22 +1,15 @@
 {
-  "name": "practicing",
+  "name": "throttling",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^41.1.0",
-    "@ckeditor/ckeditor5-react": "^6.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
-    "jspdf": "^2.5.1",
-    "jspdf-autotable": "^3.8.2",
-    "lodash": "^4.17.21",
-    "math-in-one": "^1.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "text-regex-validation": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
