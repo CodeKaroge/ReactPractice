@@ -32,3 +32,18 @@
 .styled-table tbody td:hover {
     background-color: #f1f1f1;
 }
+
+.DangerButton{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    background: red;
+    color: white;
+}
+.primaryButton{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    background: rgb(0, 179, 255);
+    color: white;
+}
