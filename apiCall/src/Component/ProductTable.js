@@ -48,11 +48,28 @@ function ProductTable() {
     const resetAll = () => {
         fetchData()
         setSearch('')
+        setSelectedValue('')
     }
 
     useEffect(() => {
         fetchData()
     }, [])
+
+    const handleDelete = async (id) => {
+        const response = await axios.delete(`${apiUrl}/${id}`)
+        setProductList(productList.filter(obj => obj.id !== response.data.id))
+    }
+
+    const fetchDataByCategory = async (selectedCategory) => {
+        const response = await axios.get(`${apiUrl}/category/${selectedCategory}`)
+        setProductList(response.data.products)
+    }
+
+    useEffect(() => {
+        if (selectedValue.length > 0) {
+            fetchDataByCategory(selectedValue)
+        }
+    }, [selectedValue])
 
     return (
         <div>
@@ -63,7 +80,7 @@ function ProductTable() {
                 placeholder='Search Here...'
             />
             <button className='primaryButton' onClick={handleSearch}>Search Here</button>
-            {search.length > 0 &&
+            {(search.length > 0 || selectedValue.length > 0) &&
                 <button className='primaryButton' onClick={resetAll}>Reset All</button>
             }
 
@@ -113,7 +130,8 @@ function ProductTable() {
                         <td>{product.price}</td>
                         <td>{product.brand}</td>
                         <td><img src={product.thumbnail} alt='Not found' /></td>
-                        <td> <button className='primaryButton' onClick={() => handleOpenModal(product.id)} > Details</button> </td>
+                        <td> <button className='primaryButton' onClick={() => handleOpenModal(product.id)} > Details</button>
+                            <button className='DangerButton' onClick={() => handleDelete(product.id)} > Delete</button></td>
                     </tbody>
                 ))}
             </table>
