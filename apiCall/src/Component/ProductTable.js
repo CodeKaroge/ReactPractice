@@ -12,6 +12,36 @@ function ProductTable() {
     const [sortOrder, setsortOrder] = useState('asc')
     const [selectedValue, setSelectedValue] = useState('')
     const [dropdownOption, setDropdownOption] = useState([])
+    const [isOpenAdd, setIsOpenAdd] = useState(false)
+    const [formData, setFormData] = useState({
+        title: '',
+        description: '',
+        price: 0,
+        brand: '',
+        category: ''
+    })
+
+    const handleForm = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
+    const handleSubmit = async () => {
+        await axios.post(`${apiUrl}/add`, formData).then((response) => {
+            setProductList([response.data, ...productList])
+            setIsOpenAdd(false)
+            setFormData({
+                title: '',
+                description: '',
+                price: 0,
+                brand: '',
+                category: ''
+            })
+        }
+        ).catch((err) => alert(err))
+    }
+    console.log(formData);
 
     const handleOpenModal = async (id) => {
         const response = await axios.get(`${apiUrl}/${id}`)
@@ -83,7 +113,7 @@ function ProductTable() {
             {(search.length > 0 || selectedValue.length > 0) &&
                 <button className='primaryButton' onClick={resetAll}>Reset All</button>
             }
-
+            <button onClick={() => setIsOpenAdd(true)} className='primaryButton' >Add New Product</button>
             <select value={selectedValue} onChange={handleDropdownChange}>
                 <option value='' disabled >Select option</option>
                 {dropdownOption.map((item, index) => (
@@ -110,6 +140,24 @@ function ProductTable() {
                 </div>
                 <button onClick={() => setIsOpen(false)}>Close</button>
             </ProductDetails>
+            <ProductDetails isOpen={isOpenAdd} handleCloseModal={()=> setIsOpenAdd(false)}>
+                <label>Title: </label>
+                <input className='inputStyle' name="title" value={formData.title} type='text' onChange={handleForm} />
+                <br />
+                <label>Description :</label>
+                <input className='inputStyle' name='description' value={formData.description} onChange={handleForm} />
+                <br />
+                <label>Price : </label>
+                <input className='inputStyle' name="price" value={formData.price} type='number' onChange={handleForm} />
+                <br />
+                <label>Category : </label>
+                <input className='inputStyle' name="category" value={formData.category} type='text' onChange={handleForm} />
+                <br />
+                <label>Brand: </label>
+                <input className='inputStyle' name="brand" value={formData.brand} type='text' onChange={handleForm} />
+                <br />
+                <button onClick={handleSubmit}>Submit</button>
+            </ProductDetails>
             <table className="styled-table">
                 <thead >
                     <th>Id <span style={{ cursor: 'pointer' }} onClick={() => handleSort('id')} >↑</span> </th>
@@ -131,7 +179,8 @@ function ProductTable() {
                         <td>{product.brand}</td>
                         <td><img src={product.thumbnail} alt='Not found' /></td>
                         <td> <button className='primaryButton' onClick={() => handleOpenModal(product.id)} > Details</button>
-                            <button className='DangerButton' onClick={() => handleDelete(product.id)} > Delete</button></td>
+                            <button className='DangerButton' onClick={() => handleDelete(product.id)} > Delete</button>
+                            </td>
                     </tbody>
                 ))}
             </table>

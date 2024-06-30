@@ -50,3 +50,10 @@
 .product-details p {
     margin: 8px 0;
 }
+
+.inputStyle {
+    border-radius: 5px;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+}
