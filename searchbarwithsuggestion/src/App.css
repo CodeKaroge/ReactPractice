@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.dropdown {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.input{
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}
