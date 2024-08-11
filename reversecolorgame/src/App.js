@@ -1,11 +1,10 @@
 import './App.css';
-import SearchSuggestion from './SearchSuggestion';
+import ReverseComponent from './ReverseComponent';
 
 function App() {
-  
   return (
     <div className="App">
-      <SearchSuggestion />
+      <ReverseComponent />
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mainContainer{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  gap: 5px;
+}
+.inner-box{
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
