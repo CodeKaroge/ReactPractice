@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.traffic-light {
+  width: 100px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.red-active {
+  background-color: red;
+}
+
+.yellow-active {
+  background-color: yellow;
+}
+
+.green-active {
+  background-color: green;
+}

@@ -1,0 +1,25 @@
+.parentBox{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.box{
+    width: 70px;
+    height: 60px;
+    text-align: column;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.red{
+    background-color: red;
+    cursor: not-allowed;
+}
+.green{
+    background-color: green;
+    cursor: pointer;
+}
+.blue{
+    background-color: blue;
+    cursor: pointer;
+}
