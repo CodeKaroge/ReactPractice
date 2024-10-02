@@ -1,0 +1,17 @@
+.imageViewMain {
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imageView {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+  }
+  .imageTabs{
+    padding: 10px;
+    margin: 5px;
+  }
+  
