@@ -1,0 +1,166 @@
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 500px;
+    margin-top: 20px;
+  }
+  .controls-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .bar {
+    margin: 0 5px;
+    width: 30px;
+    background-color: #5fb8fd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+    transition: height 0.2s, background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #060606;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .bar.yellow {
+    background-color: #f5c85c;
+  }
+  .bar.red {
+    background-color: #ff6b6b;
+  }
+  .bar.green {
+    background-color: #8fd19e;
+  }
+  .bar.blue {
+    background-color: #6c92e8;
+  }
+  .neu-button {
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+    transition: all 0.3s ease;
+  }
+  .neu-button:hover {
+    box-shadow: 3px 3px 10px #b3b3b3, -3px -3px 10px #ffffff;
+  }
+  .neu-button:active {
+    box-shadow: inset 5px 5px 15px #b3b3b3, inset -5px -5px 15px #ffffff;
+  }
+  .neu-button:focus {
+    outline: none;
+  }
+  .neumorphism-dropdown {
+    width: 200px;
+    padding: 10px;
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+    appearance: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .neumorphism-dropdown::after {
+    content: '\25BC';
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .neumorphism-dropdown:hover {
+    box-shadow: 3px 3px 10px #b3b3b3, -3px -3px 10px #ffffff;
+  }
+  .neumorphism-dropdown:focus {
+    box-shadow: inset 5px 5px 15px #b3b3b3, inset -5px -5px 15px #ffffff;
+  }
+  .neumorphism-dropdown option {
+    padding: 10px;
+    background-color: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #b3b3b3, -3px -3px 10px #ffffff;
+  }
+  .speedControl {
+    margin-top: 14px;
+  }
+  .speedControl{
+    margin-top: 14px;
+  }
+  .input-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  .neumorphic-input {
+    width: 250px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #ecf0f3;
+    border: none;
+    box-shadow: inset 5px 5px 10px #b3b3b3, inset -5px -5px 10px #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .neumorphic-input:focus {
+    box-shadow: inset 2px 2px 5px #b3b3b3, inset -2px -2px 5px #ffffff, 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .neumorphic-input::placeholder {
+    color: #999999;
+  }
+  .info-icon-wrapper {
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .info-icon {
+    background-color: #ecf0f3;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #ffffff;
+    transition: box-shadow 0.3s ease;
+  }
+  .info-icon-wrapper:hover .info-icon {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2), -3px -3px 7px rgba(255, 255, 255, 0.7);
+  }
+  .tooltip-text {
+    visibility: hidden;
+    width: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -40px;
+    left: -75px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .info-icon-wrapper:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
