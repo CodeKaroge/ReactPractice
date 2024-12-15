@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Control({ handleNewArrayGenrate, handleSorting, userInuptArray, setUserInuptArray  }) {
+function Control({ handleNewArrayGenrate, setSpeed, isSorting, handleSorting, userInuptArray, setUserInuptArray, reSet, selectedSorting }) {
     return (
         <div className='controls-container'>
             <div className="input-wrapper">
@@ -11,10 +11,26 @@ function Control({ handleNewArrayGenrate, handleSorting, userInuptArray, setUser
                 </div>
             </div>
             <button className='neu-button' onClick={handleNewArrayGenrate}>Generate New Array</button>
-            <select className='neumorphism-dropdown' onChange={handleSorting}>
+            <button className="neu-button" onClick={reSet} >
+                Reset
+            </button>
+            <select className='neumorphism-dropdown' value={selectedSorting} onChange={handleSorting}>
                 <option value=''>Select Sorting</option>
                 <option value='bubbleSort'>Bubble Sorting</option>
+                <option value="mergeSort">Merge Sort</option>
+                <option value="selectionSort">SelectionSort Sort</option>
             </select>
+            <label>
+                Speed:
+                <input
+                    type="range"
+                    min="10"
+                    max="200"
+                    className="speedControl"
+                    onChange={(e) => setSpeed(200 - e.target.value)}
+                    disabled={isSorting}
+                />
+            </label>
         </div>
     )
 }
