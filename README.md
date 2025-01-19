@@ -1,6 +1,6 @@
 # 🌟 Welcome to **CodeKaroge**! 🎥💻  
 
-![CodeKaroge Banner]([https://via.placeholder.com/1200x300?text=CodeKaroge+-+Learn+Code+with+Fun+%F0%9F%92%9C](https://yt3.googleusercontent.com/5OKcQVU4La7HaBdY_xMi8RUN6fuWn0MN_2I1OfQ4-lYIB0-edKxqqL-YoM8qfYIl5MaT4E-I1Y4=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj))
+![CodeKaroge Thumbnail](https://yt3.googleusercontent.com/5OKcQVU4La7HaBdY_xMi8RUN6fuWn0MN_2I1OfQ4-lYIB0-edKxqqL-YoM8qfYIl5MaT4E-I1Y4=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj)
 
 👋 **Hey there, Code Enthusiasts!**  
 This repository is your ultimate destination for **Machine Coding Round Questions** paired with comprehensive **tutorials** and **videos** to ace your coding interviews like a pro. 🚀
