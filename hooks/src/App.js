@@ -7,12 +7,18 @@ import UseLocalStorageComonent from './components/UseLocalStorage/UseLocalStorag
 import UseFetchComponent from './components/UseFetch/UseFetchComponent';
 import UseDebounceComponent from './components/UseDebounce/UseDebounceComponent';
 import UseToggleComponent from './components/UseToggle/UseToggleComponent';
+import UsePreviousComponent from './components/UsePrevious/UsePreviousComponent';
+import UseEventListenerComponent from './components/UseEventListener/UseEventListenerComponent';
+import UseCopyToClipboardComponent from './components/UseCopyToClipboard/UseCopyToClipboardComponent';
+import UseHoverComponent from './components/UseHover/UseHoverComponent';
+import UseTimeOutComponent from './components/UseTimeout/UseTimeoutComponent';
 
 function App() {
   return (
     <div className="App">
       <h1>Code Karoge</h1>
-      <UseToggleComponent />
+      <UseTimeOutComponent
+      />
     </div>
   );
 }
