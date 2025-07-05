@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #d9e2ec;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  min-height: 100vh;
+}
+
+.counter-display {
+  font-size: 4rem;
+  padding: 1rem 2rem;
+  border: 5px solid #007bff;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  width: fit-content;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-btn {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+}
+
+.action-btn.reset {
+  background-color: #dc3545;
+}
+
+.action-btn.reset:hover {
+  background-color: #a71d2a;
+}
+
+.log-section {
+  margin-top: 2rem;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.log-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.log-section li {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.online-users {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.users-section {
+  margin-top: 2rem;
+  text-align: left;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.users-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.users-section li {
+  background: #e6f7ff;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
