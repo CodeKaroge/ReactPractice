@@ -1,5 +1,5 @@
 🌟 Welcome to CodeKaroge! 🚀💻🎥
-<div align="center"> <img src="https://yt3.googleusercontent.com/5OKcQVU4La7HaBdY_xMi8RUN6fuWn0MN_2I1OfQ4-lYIB0-edKxqqL-YoM8qfYIl5MaT4E-I1Y4=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="CodeKaroge Thumbnail" width="400"/> </div>
+<div align="center"> <img src="[https://yt3.googleusercontent.com/5OKcQVU4La7HaBdY_xMi8RUN6fuWn0MN_2I1OfQ4-lYIB0-edKxqqL-YoM8qfYIl5MaT4E-I1Y4=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj](https://yt3.googleusercontent.com/zq7E-ymnOnevt9V8JkeWyauFe6hwnY4E6yo8YSTVaA0YJxNukvvDF5tRsjFcVNeAM7hotdZr=s160-c-k-c0x00ffffff-no-rj)" alt="CodeKaroge Thumbnail" width="400"/> </div>
 ✨ Hey Code Warriors! 👋
 Welcome to CodeKaroge, your one-stop hub for Machine Coding Round Mastery, real-world coding challenges, and power-packed tutorials to transform your coding journey. 💥
 
