@@ -1,79 +1,81 @@
-# 🌟 Welcome to **CodeKaroge**! 🎥💻  
+🌟 Welcome to CodeKaroge! 🚀💻🎥
+<div align="center"> <img src="https://yt3.googleusercontent.com/5OKcQVU4La7HaBdY_xMi8RUN6fuWn0MN_2I1OfQ4-lYIB0-edKxqqL-YoM8qfYIl5MaT4E-I1Y4=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="CodeKaroge Thumbnail" width="400"/> </div>
+✨ Hey Code Warriors! 👋
+Welcome to CodeKaroge, your one-stop hub for Machine Coding Round Mastery, real-world coding challenges, and power-packed tutorials to transform your coding journey. 💥
 
-![CodeKaroge Thumbnail](https://yt3.googleusercontent.com/5OKcQVU4La7HaBdY_xMi8RUN6fuWn0MN_2I1OfQ4-lYIB0-edKxqqL-YoM8qfYIl5MaT4E-I1Y4=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj)
+🎯 Learn, Code, Conquer. Repeat.
 
-👋 **Hey there, Code Enthusiasts!**  
-This repository is your ultimate destination for **Machine Coding Round Questions** paired with comprehensive **tutorials** and **videos** to ace your coding interviews like a pro. 🚀
+🔥 What We Do
+At CodeKaroge, we believe:
 
----
+🌱 Learning = Doing + Failing + Trying Again + Winning
 
-## 🔥 What We Do  
-At **CodeKaroge**, we believe in learning by doing! Our mission is to simplify complex coding problems with:  
-✨ **High-quality tutorials and walkthrough videos**  
-✨ **Code snippets and solutions**  
-✨ **Real-world machine coding round questions**  
+💡 Here’s how we empower you:
 
-🎥 **Subscribe to our [YouTube Channel](https://youtube.com/@codekaroge)** for coding tutorials, live coding sessions, and tips to crack your dream job!  
+✅ Break down complex coding problems into digestible solutions
+✅ High-quality video tutorials with intuitive explanations
+✅ Real-world Machine Coding Round questions asked by top product companies
+✅ Optimised code snippets with clear comments
 
----
+<div align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&pause=1000&color=06D6A0&vCenter=true&width=600&lines=💻+Build.+Code.+Conquer.;🚀+Ace+Machine+Coding+Rounds;🔥+Crack+Top+Product+Companies" alt="Typing SVG Animation"/> </div>
+🗂️ Repository Overview
+📁 Folders:
+Each folder is dedicated to a topic, question, or challenge containing:
 
-## 🗂️ Repository Overview  
+📝 Problem statement
 
-📁 **Folders**:  
-- Each folder is named after a **question topic** or **challenge**.  
-- Inside, you'll find the **problem statement**, **starter code**, and **solution code**.  
+💻 Starter code
 
-📜 **Content Includes**:  
-- 🚀 Real-world coding problems  
-- ✅ Step-by-step solutions  
-- 🔍 Optimized code with comments  
+✅ Optimised solution with explanation
 
----
+🎯 Content Highlights:
 
-## 💡 How to Use  
+Real-world coding problems
 
-1. 🌟 **Star this repo** for easy access.  
-2. 🔥 Browse through the folders to pick a problem you'd like to solve.  
-3. 🎥 Watch our [video tutorials](https://youtube.com/@codekaroge) for guidance.  
-4. ✍️ Practice, practice, and practice!  
+Step-by-step solutions with clarity
 
----
+Clean, production-ready code
 
-## 🛠️ Tools & Technologies  
+💡 How to Use This Repo
+⭐ Star this repository to stay updated.
 
-This repository is built using:  
-- **Languages**: 🟦 JavaScript | 🌐 ReactJS | C++
-- **Frameworks**: ⚛️ React | 🖥️ Node.js  
-- **Databases**: 🛢️ SQL | MongoDB  
+🔎 Pick a problem you want to master today.
 
----
+🎥 Watch our YouTube Tutorials for deep conceptual clarity.
 
-## 🎯 Our Vision  
+📝 Practice rigorously and build your confidence.
 
-To empower **every aspiring developer** to:  
-- Ace coding interviews 💪  
-- Build real-world projects 🚀  
-- Learn and grow with confidence 🤩  
+🛠️ Tools & Technologies
+Built with ❤️ using:
 
----
+🟦 Languages: JavaScript | ReactJS | C++
 
-## 🌈 Stay Connected  
+⚛️ Frameworks: React | Node.js
 
-- 🎥 **YouTube**: [CodeKaroge Channel](https://youtube.com/@codekaroge) 
----
+🛢️ Databases: SQL | MongoDB
 
-## ⭐ Contribution Guidelines  
+🎯 Our Vision
+At CodeKaroge, we dream to empower every aspiring developer to:
 
-Love what we’re doing? Want to contribute? 🥳  
-Check out our [CONTRIBUTING.md](./CONTRIBUTING.md) file for detailed guidelines.  
+💪 Crack coding interviews fearlessly
+🚀 Build impactful real-world projects
+🌟 Grow with confidence and clarity
 
----
+🌈 Stay Connected
+📺 Subscribe to our YouTube Channel for:
 
-## 🎉 Let’s Get Started!  
+🚀 Coding tutorials
 
-Dive into the problems and **CodeKaroge**! 💻✨  
-_"Because the best way to learn is by building."_  
+🔴 Live coding sessions
 
----
+💡 Tips & tricks to ace interviews
 
-### 🖤 Made with Love by **CodeKaroge Team** 🖤  
+👉 CodeKaroge YouTube Channel
+
+⭐ Contribution Guidelines
+💖 Love what we’re building? Want to make an impact?
+Check out our CONTRIBUTING.md to start contributing today!
+
+<div align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=FF6B6B&vCenter=true&width=600&lines=✨+Let's+Get+Started!;💻+Dive+into+problems+and+build.;🔥+Practice.+Learn.+Grow." alt="Typing SVG Animation"/> </div>
+🖤 Made with Love by the CodeKaroge Team 🖤
+"Because the best way to learn is by building." 💡
