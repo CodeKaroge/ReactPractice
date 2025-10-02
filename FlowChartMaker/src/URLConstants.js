@@ -1,1 +1,1 @@
-export const STORAGE_KEY = "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";
+export const STORAGE_KEY = "";
