@@ -1,6 +1,6 @@
 import './App.css';
 import { CounterProvider } from './components/UseContext/index';
-import Counter from './components/UseContext/Counter';
+// import Counter from './components/UseContext/Counter';
 import UseRefComponent from './components/UseRef/UseRefComponent';
 import useLocalStorage from './components/UseLocalStorage/useLocalStorage';
 import UseLocalStorageComonent from './components/UseLocalStorage/UseLocalStorageComonent';
@@ -12,13 +12,13 @@ import UseEventListenerComponent from './components/UseEventListener/UseEventLis
 import UseCopyToClipboardComponent from './components/UseCopyToClipboard/UseCopyToClipboardComponent';
 import UseHoverComponent from './components/UseHover/UseHoverComponent';
 import UseTimeOutComponent from './components/UseTimeout/UseTimeoutComponent';
+import UseDocumentTitleApp from './components/useDocumentTitle/src/App';
 
 function App() {
   return (
     <div className="App">
       <h1>Code Karoge</h1>
-      <UseTimeOutComponent
-      />
+      <UseDocumentTitleApp />
     </div>
   );
 }
