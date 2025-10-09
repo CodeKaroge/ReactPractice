@@ -2,32 +2,48 @@
   "name": "practicing",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "useDocumentTitle",
+    "error-boundary-demo",
+    "clock",
+    "hooks",
+    "Build_A_Mini_Clone_Of_Google_Calendar",
+    "Implement_Accordion_Component"
+  ],
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^41.1.0",
     "@ckeditor/ckeditor5-react": "^6.2.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.1",
+    "@mui/x-date-pickers": "^8.12.0",
+    "@mui/x-date-pickers-pro": "^8.12.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
+    "date-fns": "^4.1.0",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.8.2",
     "lodash": "^4.17.21",
     "math-in-one": "^1.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "socket.io-client": "^4.8.1",
     "text-regex-validation": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@testing-library/react": "^13.4.0"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start:useDocumentTitle": "npm run start --workspace useDocumentTitle",
+    "start:error-boundary-demo": "npm run start --workspace error-boundary-demo",
+    "start:clock": "npm run start --workspace clock",
+    "start:hooks": "npm run start --workspace hooks",
+    "start:Build_A_Mini_Clone_Of_Google_Calendar": "npm run start --workspace Build_A_Mini_Clone_Of_Google_Calendar",
+    "start:Implement_Accordion_Component": "npm run start --workspace Implement_Accordion_Component"
   },
   "eslintConfig": {
     "extends": [

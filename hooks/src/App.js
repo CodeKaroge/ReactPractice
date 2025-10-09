@@ -12,13 +12,14 @@ import UseEventListenerComponent from './components/UseEventListener/UseEventLis
 import UseCopyToClipboardComponent from './components/UseCopyToClipboard/UseCopyToClipboardComponent';
 import UseHoverComponent from './components/UseHover/UseHoverComponent';
 import UseTimeOutComponent from './components/UseTimeout/UseTimeoutComponent';
-import UseDocumentTitleApp from './components/useDocumentTitle/src/App';
+// import UseDocumentTitleApp from './components/useDocumentTitle';
+import TimerComponent from './components/UseTimer/TimerComponent'
 
 function App() {
   return (
     <div className="App">
       <h1>Code Karoge</h1>
-      <UseDocumentTitleApp />
+      <TimerComponent />
     </div>
   );
 }

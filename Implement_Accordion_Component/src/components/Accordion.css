@@ -1,0 +1,30 @@
+.accordion {
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    color: black;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+    background-color: #f7f7f7;
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-title:hover {
+    background-color: #eaeaea;
+}
+
+.accordion-content {
+    padding: 12px 16px;
+    background-color: #fff;
+}
