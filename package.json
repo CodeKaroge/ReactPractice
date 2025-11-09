@@ -10,7 +10,8 @@
     "Build_A_Mini_Clone_Of_Google_Calendar",
     "Implement_Accordion_Component",
     "How_to_create_OTP_Input_Component",
-    "How_to_build_a_File_Explorer"
+    "How_to_build_a_File_Explorer",
+    "Build_Country_Capital_Game"
   ],
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^41.1.0",
@@ -47,7 +48,8 @@
     "start:Build_A_Mini_Clone_Of_Google_Calendar": "npm run start --workspace Build_A_Mini_Clone_Of_Google_Calendar",
     "start:Implement_Accordion_Component": "npm run start --workspace Implement_Accordion_Component",
     "start:How_to_create_OTP_Input_Component": "npm run start --workspace How_to_create_OTP_Input_Component",
-    "start:How_to_build_a_File_Explorer": "npm run start --workspace How_to_build_a_File_Explorer"
+    "start:How_to_build_a_File_Explorer": "npm run start --workspace How_to_build_a_File_Explorer",
+    "start:Build_Country_Capital_Game": "npm run start --workspace Build_Country_Capital_Game"
   },
   "eslintConfig": {
     "extends": [
