@@ -11,7 +11,8 @@
     "Implement_Accordion_Component",
     "How_to_create_OTP_Input_Component",
     "How_to_build_a_File_Explorer",
-    "Build_Country_Capital_Game"
+    "Build_Country_Capital_Game",
+    "Infinite_Scroll_Pagination"
   ],
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^41.1.0",
@@ -49,7 +50,8 @@
     "start:Implement_Accordion_Component": "npm run start --workspace Implement_Accordion_Component",
     "start:How_to_create_OTP_Input_Component": "npm run start --workspace How_to_create_OTP_Input_Component",
     "start:How_to_build_a_File_Explorer": "npm run start --workspace How_to_build_a_File_Explorer",
-    "start:Build_Country_Capital_Game": "npm run start --workspace Build_Country_Capital_Game"
+    "start:Build_Country_Capital_Game": "npm run start --workspace Build_Country_Capital_Game",
+    "start:Infinite_Scroll_Pagination": "npm run start --workspace Infinite_Scroll_Pagination"
   },
   "eslintConfig": {
     "extends": [
